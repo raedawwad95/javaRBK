@@ -54,5 +54,14 @@ public class MyClass {
         System.out.println(Arrays.toString(result));
 		}
 
-	
+	public void repeatString (String str, int count) {
+		System.out.println("hi");
+		String newStr="";
+		int i=0;
+		while(count>i){
+			newStr +=str;
+			i++;
+		}
+		System.out.println(newStr);
+	}
 }

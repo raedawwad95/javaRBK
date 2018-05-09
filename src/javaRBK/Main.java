@@ -12,18 +12,22 @@ public class Main {
 		
 		System.out.println("Input Number :");
 		int number = render.nextInt();
-		System.out.println(number);
 		myClass.guessMyNumber(number);
 		
 		System.out.println("input 5 number :");
 		int arr[] =new int[5];
-		for(int i=0;i<5;i++){
+		for(int i=0;i<arr.length;i++){
 			int num =render.nextInt();
 			arr[i]=num;
 		}
-		System.out.println(Arrays.toString(arr));
 		myClass.acceptAndReverse(arr);
 		myClass.acceptAndReversMe(arr);
+		System.out.println("input counter :");
+	    int count = render.nextInt();
+	    System.out.println("input string :");
+	    String str = render.next();
+	    myClass.repeatString(str, count);
 	}
+	
 
 }
