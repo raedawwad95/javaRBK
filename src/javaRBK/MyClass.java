@@ -13,10 +13,24 @@ public class MyClass {
 		System.out.println(RandNum);
 		if(RandNum == num){
 		System.out.println("Congratulation!! You win!!");
+		break;
 		} else if(RandNum != num && x == 3){
 			System.out.println("Game over");
 		}
 		}
+		
+	}
+	
+	public void acceptAndReverse (int []n){
+		
+		int newArr[]=new int[n.length];
+		int count =0;
+		for(int i =n.length-1;i>=0;i--){
+			newArr[count] =n[i];
+			count++;
+			
+		}
+		System.out.println(Arrays.toString(newArr));
 		
 	}
 	

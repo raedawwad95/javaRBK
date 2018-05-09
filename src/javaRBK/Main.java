@@ -14,6 +14,15 @@ public class Main {
 		int number = render.nextInt();
 		System.out.println(number);
 		myClass.guessMyNumber(number);
+		
+		System.out.println("input 5 number :");
+		int arr[] =new int[5];
+		for(int i=0;i<5;i++){
+			int num =render.nextInt();
+			arr[i]=num;
+		}
+		System.out.println(Arrays.toString(arr));
+		myClass.acceptAndReverse(arr);
 	}
 
 }
