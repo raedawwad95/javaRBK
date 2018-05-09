@@ -1,5 +1,7 @@
 package javaRBK;
 import java.util.*;
+
+
 public class MyClass {
 
 	public void printMsg (String str) {
@@ -33,5 +35,24 @@ public class MyClass {
 		System.out.println(Arrays.toString(newArr));
 		
 	}
+	
+	public void acceptAndReversMe (int []n){
+		//ArrayUtils.addAll
+		
+		int newArr[]=new int[n.length];
+		int count =0;
+		for(int i =n.length-1;i>=0;i--){
+			newArr[count] =n[i];
+			count++;
+			
+		}
+		int[] result = new int[n.length + newArr.length];	
+		
+        System.arraycopy(n, 0, result, 0, n.length);
+        System.arraycopy(newArr, 0, result, n.length, newArr.length);
+
+        System.out.println(Arrays.toString(result));
+		}
+
 	
 }
